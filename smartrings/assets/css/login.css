@@ -1,0 +1,114 @@
+/* Общие стили для страницы */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #e6f9e6, #ffffff); /* Плавный зелёный градиент */
+    background-attachment: fixed; /* Фиксированный фон */
+    margin: 0;
+    padding: 0;
+    color: #333;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Центрирование содержимого */
+}
+
+/* Контейнер формы */
+.container {
+    width: 100%;
+    max-width: 400px;
+    background: #ffffff; /* Белый фон */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 128, 0, 0.2); /* Зелёная тень */
+    padding: 30px;
+    border: 1px solid #b2d8b2;
+}
+
+/* Заголовок */
+h1 {
+    text-align: center;
+    color: #2e7d32; /* Тёмно-зелёный */
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Поля ввода */
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #a5d6a7;
+    border-radius: 5px;
+    background-color: #f1f8e9;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #2e7d32;
+    box-shadow: 0 0 5px rgba(46, 125, 50, 0.4);
+    outline: none;
+}
+
+/* Обёртка кнопок */
+.button-container {
+    display: flex;
+    flex-direction: column; /* Кнопки идут вертикально */
+    gap: 10px; /* Отступ между кнопками */
+}
+
+/* Общий стиль для кнопок */
+.btn {
+    display: block; /* Оба элемента ведут себя как блок */
+    width: 100%; /* Одинаковая ширина для всех кнопок */
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    border: none;
+    text-decoration: none; /* Убирает подчёркивание у ссылок */
+}
+
+/* Кнопка Register (зелёная) */
+.btn-primary {
+    background-color: #4caf50; /* Зелёный цвет */
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #388e3c;
+    transform: scale(1.02);
+}
+
+/* Кнопка Login (с зелёной рамкой) */
+.btn-outline-primary {
+    background-color: #ffffff;
+    color: #4caf50;
+    border: 2px solid #4caf50;
+    box-sizing: border-box; /* Учитываем рамку в размерах */
+}
+
+.btn-outline-primary:hover {
+    background-color: #4caf50;
+    color: #ffffff;
+    transform: scale(1.02);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}

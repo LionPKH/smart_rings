@@ -1,0 +1,168 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #e6f9e6, #ffffff); /* Зелёный градиентный фон */
+    color: #333;
+}
+
+/* Стили для хедера */
+header {
+    background-color: #2e7d32; /* Тёмно-зелёный */
+    padding: 10px 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff; /* Белый текст */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #a5d6a7; /* Светло-зелёный при наведении */
+}
+
+/* Основной контент */
+main {
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #ffffff; /* Белый фон основного блока */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(46, 125, 50, 0.2);
+    border: 1px solid #c8e6c9; /* Светлая зелёная рамка */
+}
+
+/* Стили для футера */
+footer {
+    background-color: #e8f5e9; /* Светло-зелёный фон */
+    text-align: center;
+    padding: 10px 0;
+    color: #2e7d32; /* Тёмно-зелёный текст */
+    font-weight: bold;
+    border-top: 1px solid #c8e6c9;
+}
+
+/* Общий стиль для кнопок */
+.account-button,
+.account-button-form button {
+    display: inline-block;
+    background-color: #4caf50; /* Зелёный цвет кнопки */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.account-button:hover,
+.account-button-form button:hover {
+    background-color: #2e7d32; /* Тёмно-зелёный */
+    transform: scale(1.02);
+}
+
+/* Специальная кнопка для удаления аккаунта */
+.account-button-delete {
+    background-color: #66bb6a; /* Светло-зелёный */
+}
+
+.account-button-delete:hover {
+    background-color: #43a047; /* Тёмно-зелёный */
+}
+
+/* Специальная кнопка для редактирования данных */
+.account-button-edit {
+    background-color: #81c784; /* Светло-зелёный оттенок */
+}
+
+.account-button-edit:hover {
+    background-color: #388e3c; /* Тёмно-зелёный */
+}
+
+/* Кнопка выхода */
+.account-button-logout {
+    background-color: #66bb6a; /* Светло-зелёный */
+}
+
+.account-button-logout:hover {
+    background-color: #2e7d32; /* Тёмно-зелёный */
+}
+
+/* Добавьте это в конец вашего style.css */
+
+/* Стилизация формы добавления КТ-снимка */
+form label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+form label input[type="text"],
+form label select,
+form label input[type="file"] {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+form label input[type="text"]:focus,
+form label select:focus,
+form label input[type="file"]:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0,123,255,0.3);
+}
+
+form button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    width: 200px;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+.return-link {
+    margin-top: 20px;
+}
+
+.return-link a {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #6c757d;
+    color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.return-link a:hover {
+    background-color: #5a6268;
+}

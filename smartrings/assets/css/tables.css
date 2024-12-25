@@ -1,0 +1,82 @@
+/* Общие стили для таблицы */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: linear-gradient(to bottom, #e0f2e9, #ffffff); /* Плавный зелёный градиент */
+    color: #333;
+}
+
+/* Заголовок таблицы */
+h1, h2 {
+    color: #2e7d32; /* Тёмно-зелёный цвет */
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+/* Стиль таблицы */
+table {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto 20px;
+    border-collapse: collapse;
+    background-color: #ffffff; /* Белый фон таблицы */
+    border-radius: 8px;
+    overflow: hidden; /* Скругление углов */
+    box-shadow: 0 4px 8px rgba(46, 125, 50, 0.2); /* Лёгкая зелёная тень */
+    border: 1px solid #c8e6c9; /* Светлая зелёная рамка */
+}
+
+/* Заголовки таблицы */
+th {
+    background-color: #4caf50; /* Насыщенно-зелёный */
+    color: #ffffff; /* Белый текст */
+    font-weight: bold;
+    padding: 12px 15px;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+/* Ячейки данных */
+td {
+    padding: 12px 15px;
+    border: 1px solid #c8e6c9; /* Светлая зелёная граница */
+    color: #333;
+    background-color: #f1f8e9; /* Очень светло-зелёный фон */
+}
+
+/* Чётные строки */
+tr:nth-child(even) {
+    background-color: #e8f5e9; /* Светло-зелёный для чётных строк */
+}
+
+/* Ховер-эффект на строках */
+tr:hover {
+    background-color: #c8e6c9; /* Плавное выделение строки */
+    transition: background-color 0.3s ease;
+}
+
+/* Маленькие экраны */
+@media (max-width: 768px) {
+    table {
+        font-size: 0.9rem;
+    }
+
+    th, td {
+        padding: 8px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    table {
+        font-size: 0.8rem;
+    }
+
+    th, td {
+        padding: 6px 8px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}

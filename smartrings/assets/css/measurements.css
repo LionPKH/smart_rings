@@ -1,0 +1,128 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #e6f9e6, #ffffff); /* Зелёный градиент */
+    margin: 0;
+    padding: 0;
+    color: #333;
+    box-sizing: border-box;
+}
+
+/* Заголовок */
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    color: #2e7d32; /* Тёмно-зелёный */
+    font-size: 2rem;
+}
+
+/* Форма */
+form {
+    width: 100%;
+    max-width: 400px; /* Ширина формы */
+    margin: 50px auto;
+    background: #ffffff; /* Белый фон */
+    border: 1px solid #c8e6c9; /* Светло-зелёная рамка */
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(46, 125, 50, 0.2); /* Тень вокруг формы */
+}
+
+/* Метки */
+form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    color: #388e3c; /* Зелёный цвет меток */
+    font-size: 1rem;
+}
+
+/* Поля ввода */
+form input[type="text"],
+form input[type="date"],
+form input[type="tel"],
+form input[type="email"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #a5d6a7; /* Светло-зелёный бордер */
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #f1f8e9; /* Очень светло-зелёный фон */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Фокус на полях ввода */
+form input:focus,
+form textarea:focus,
+form select:focus {
+    border-color: #2e7d32; /* Тёмно-зелёный */
+    box-shadow: 0 0 5px rgba(46, 125, 50, 0.4);
+    outline: none;
+}
+
+/* Кнопка отправки */
+form button {
+    width: 100%;
+    padding: 12px;
+    background: #4caf50; /* Зелёная кнопка */
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.1s ease;
+}
+
+/* Ховер-эффект кнопки */
+form button:hover {
+    background: #388e3c; /* Тёмно-зелёный */
+}
+
+form button:active {
+    transform: scale(0.98); /* Легкий эффект при нажатии */
+}
+
+/* Сообщения об ошибке */
+div[style="color: red;"] {
+    background: #e8f5e9; /* Светло-зелёный фон */
+    border: 1px solid #a5d6a7; /* Зелёная рамка */
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    color: #2e7d32; /* Тёмно-зелёный текст */
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(46, 125, 50, 0.2);
+}
+
+/* Список ошибок */
+div[style="color: red;"] ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+div[style="color: red;"] li {
+    margin-bottom: 8px;
+    color: #388e3c;
+    font-size: 0.95rem;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    form {
+        padding: 20px;
+    }
+
+    form label {
+        font-size: 0.9rem;
+    }
+
+    form button {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
